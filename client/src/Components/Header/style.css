@@ -1,0 +1,13 @@
+.icone, .menu{
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 550px) {
+  .menu, .icone{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+
