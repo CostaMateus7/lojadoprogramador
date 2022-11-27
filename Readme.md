@@ -54,18 +54,18 @@ http://localhost:3000
 
 - ReactJs
 - Organização de pastas;
--JSX
+- JSX
 - Components;
--React Router
--ContextAPI
--Persistência de dados (Local Storage),
--UseState,
--UseNavigate,
--UseEffect,
--Styled components,
+- React Router
+- ContextAPI
+- Persistência de dados (Local Storage),
+- UseState,
+- UseNavigate,
+- UseEffect,
+- Styled components,
 - Map, find, reduce
--Axios
--Themes
+- Axios
+- Themes
 - Responsividade
 
 
