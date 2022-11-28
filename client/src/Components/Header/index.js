@@ -6,9 +6,9 @@ import './style.css'
 import { Link } from 'react-router-dom';
 import MenuMobile from "../MenuMobile"
 import { contextCart } from "../../Context/CartContext";
+import { dark } from "../../Style/Theme";
 
-
-export default function Header(){
+export default function Header({onToggleTheme, selectedTheme}){
   const { cart } = useContext(contextCart)
   const [mobile, setMobile] = useState(false);
   const cartSize = cart.length;
@@ -19,11 +19,19 @@ export default function Header(){
     setMenuVisible={setMobile}
     />
     <HeaderContainer>
-    
       <Menu>
-      <GiHamburgerMenu className="menu" onClick={()=>setMobile(true)}/>
+       <GiHamburgerMenu className="menu" onClick={()=>setMobile(true)}/>
       </Menu>
         <Title>Loja do Programador</Title>
+        <span>
+        <button 
+          onClick={onToggleTheme}
+         >
+          
+          {selectedTheme === dark ? '🌞' : '🌚'}
+        </button> 
+        </span>
+   
       <Sale>
         <div>{cartSize }</div>
         <Link to="/compras"><SlBasket className="icone"/></Link>

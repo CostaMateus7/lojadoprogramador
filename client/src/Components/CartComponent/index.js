@@ -1,6 +1,4 @@
 import React, {useContext} from "react";
-import Header from '../Header'
-import Footer from "../Footer";
 import { formatPrice } from "../../Money"
 import { contextCart } from "../../Context/CartContext";
 import { Container, CartItem, SectionTotal} from "./style";
@@ -55,7 +53,6 @@ export default function CartComponent(){
 
   return(
     <>
-    <Header/>
     <Container>
       {formatCart.map(product => (
         <CartItem key={product.id}>
@@ -93,8 +90,6 @@ export default function CartComponent(){
           <span>{total}</span>
           <button type="button">Finalizar Pedido</button>
         </SectionTotal>
-    <Footer/>
-
     </>
   )
 }

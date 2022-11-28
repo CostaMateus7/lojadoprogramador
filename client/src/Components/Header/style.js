@@ -7,9 +7,19 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  span button{
+    border: none;
+    font-size: 30px;
+    background-color: red;
+    top: 45px;
+    cursor: pointer;
+    right: 15px;
+    position: absolute;
+  }
   @media screen and (max-width: 500px) {
       justify-content: space-around;
     }
+  
 `
 export const Menu = styled.button`
   cursor: pointer;
@@ -63,7 +73,7 @@ export const Title = styled.h1`
       font-size: 30px;
       margin-left: 0px;
       margin-left: 0;
-
+      display: none;
     }
 
 `
@@ -94,7 +104,7 @@ export const Sale = styled.button`
   
   }
   @media screen and (max-width: 520px) {
-    margin-right: 10px;
+    margin-right: 30px;
   }
 
 `

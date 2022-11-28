@@ -4,8 +4,6 @@ import { BsFillCartPlusFill } from "react-icons/bs";
 import CardGeneric from "../CardGeneric";
 import ContainerGeneric from "../ContainerGeneric";
 import Paragrafo from "../Paragrafo";
-import Header from "../Header"
-import Footer from "../Footer"
 import { contextCart } from "../../Context/CartContext";
 export default function CardHome(){
   const [products, setProducts] = useState([]);
@@ -28,7 +26,6 @@ export default function CardHome(){
   }, [])
   return(
     <>
-    <Header/>
     <ContainerGeneric>
       {products?.map((product,key)=>{
         return(
@@ -44,7 +41,6 @@ export default function CardHome(){
         </CardGeneric>)
       })}
     </ContainerGeneric>
-    <Footer/>
     </>
   )
 }

@@ -14,12 +14,12 @@ export default function MenuMobile({menuVisible, setMenuVisible}){
     
     <IoCloseSharp size={45} onClick={()=> setMenuVisible(false)}/>
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/camisa">Camisetas</Link>
-      <Link to="/bone">Bonés</Link>
-      <Link to="/meia">Meias</Link>
-      <Link to="/moletom">Moletons</Link>
-      <Link to="/caneca">Canecas</Link>
+      <Link to="/" onClick={()=> setMenuVisible(false)}>Home</Link>
+      <Link to="/camisa" onClick={()=> setMenuVisible(false)}>Camisetas</Link>
+      <Link to="/bone" onClick={()=> setMenuVisible(false)}>Bonés</Link>
+      <Link to="/meia" onClick={()=> setMenuVisible(false)}>Meias</Link>
+      <Link to="/moletom" onClick={()=> setMenuVisible(false)}>Moletons</Link>
+      <Link to="/caneca" onClick={()=> setMenuVisible(false)}>Canecas</Link>
      
     </nav>
   </Container>
