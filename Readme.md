@@ -21,7 +21,9 @@ https://drive.google.com/file/d/1RfqSzASD1LyUaGnc_i8OOhXd07lopKrD/view?usp=shari
 
 - Para baixar o repositório vá ao terminal e cole a seguinte instrução:
 
+```bash
 git clone https://github.com/CostaMateus7/lojadoprogramador.git
+```
 
 
 - Vá até o diretório /lojadoprogramador e digite o seguinte comando:
@@ -29,21 +31,27 @@ git clone https://github.com/CostaMateus7/lojadoprogramador.git
 
 *Dispositivos em geral*
 
+```bash
 docker compose -f server/docker-compose.yaml up -d --build &&  docker compose -f client/docker-compose.yaml up -d
-
+```
 
 *Linux*
 
+```bash
 sudo docker compose -f server/docker-compose.yaml up -d --build && sudo  docker compose -f client/docker-compose.yaml up -d
+```
 
 - Confira se os containers estão ativos com o comando: 
 
+```bash
 docker ps 
+```
 
 - Vá ao navegador e acesse
 
+ ```bash
 http://localhost:3000 
-
+``` 
 
 **Conteúdos utilizados e estudados:** 
 
