@@ -3,7 +3,7 @@ const CapRepository = require('../Repositories/CapRepository');
 class CapController {
   async index(req, res) {
     const cap = await CapRepository.findAll();
-    res.json(cap);
+    res.status(200).json(cap);
   }
 
   async show(req, res) {

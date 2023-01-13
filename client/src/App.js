@@ -22,17 +22,17 @@ function App() {
   }
   return (
     <ThemeProvider theme={currentTheme}>
-    <GlobalStyle/>
-    <CartProvider>
-    <Router>
-    <Header 
-    onToggleTheme = {handleToggleTheme}
-    selectedTheme = {theme}
-    />
-    <AppRoutes/>
-    <Footer/>
-    </Router>
-    </CartProvider>
+      <GlobalStyle/>
+        <CartProvider>
+          <Router>
+            <Header 
+            onToggleTheme = {handleToggleTheme}
+            selectedTheme = {theme}
+            />
+              <AppRoutes/>
+            <Footer/>
+          </Router>
+        </CartProvider>
     </ThemeProvider>
   );
 }

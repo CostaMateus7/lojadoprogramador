@@ -10,8 +10,6 @@ export function CartProvider({children}){
   const storageCart = localStorage.getItem('Cart_item_local');
   
   const [cart, setCart] = useState((!storageCart) ? [] : JSON.parse(storageCart))
-
-   
   
   const addProduct = async (IdProduct, productCategory)=>{
    try{ 
@@ -20,7 +18,6 @@ export function CartProvider({children}){
       const { data: product } = await Api.get(`/${productCategory}/${IdProduct}`)
       setCart([...cart, {...product, Amount: 1 }])
       localStorage.setItem('Cart_item_local', JSON.stringify([...cart, {...product }]))
-      console.log('Item adicionado')
       return
   }
     if(productInCart){
